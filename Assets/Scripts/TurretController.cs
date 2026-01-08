@@ -9,16 +9,18 @@ public class TurretController : MonoBehaviour
     public Transform firePoint;
     public float bulletSpeed = 8f;
     public float fireRate = 1f;
+    public int maxBullets = 10;   // NUMERO MASSIMO DI PROIETTILI
 
     [Header("Movimento verticale")]
     public float raiseHeight = 2f;
     public float raiseSpeed = 4f;
 
     private float fireTimer;
+    private int bulletsShot = 0;  // CONTATORE PROIETTILI
     private Vector2 basePosition;
     private Vector2 raisedPosition;
     private bool isRaised = false;
-    private bool canRaise = true; // 👈 QUESTA MANCAVA
+    private bool canRaise = true;
 
     void Start()
     {
@@ -34,6 +36,9 @@ public class TurretController : MonoBehaviour
 
     void HandleShooting()
     {
+        if (bulletsShot >= maxBullets)
+            return; // smette di sparare
+
         fireTimer += Time.deltaTime;
 
         if (fireTimer >= fireRate)
@@ -50,9 +55,10 @@ public class TurretController : MonoBehaviour
 
         if (rb != null)
         {
-            rb.linearVelocity = Vector2.left * bulletSpeed;
+            rb.linearVelocity = Vector2.left * bulletSpeed; // VELOCITÀ PROIETTILE
         }
 
+        bulletsShot++; // incrementa il contatore
         Destroy(bullet, 3f);
     }
 
@@ -62,9 +68,9 @@ public class TurretController : MonoBehaviour
         {
             isRaised = true;
             canRaise = false;
+            
         }
     }
-
 
     void MoveTurret()
     {
@@ -72,5 +78,6 @@ public class TurretController : MonoBehaviour
         transform.position = Vector2.Lerp(transform.position, targetPosition, Time.deltaTime * raiseSpeed);
     }
 }
+
 
 
