@@ -97,8 +97,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7254590773593540953}
   - component: {fileID: 7975110794377193346}
-  - component: {fileID: 8701122951495439161}
   - component: {fileID: 5333368857217699842}
+  - component: {fileID: 8701122951495439161}
   m_Layer: 0
   m_Name: DeadFall
   m_TagString: Killer
@@ -168,18 +168,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.388896, y: 1.6027298}
   m_EdgeRadius: 0
---- !u!114 &8701122951495439161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3846962034639328255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9748c2a905bd49c4a8b396e5c112cd9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &5333368857217699842
 Rigidbody2D:
   serializedVersion: 5
@@ -207,3 +195,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8701122951495439161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3846962034639328255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9748c2a905bd49c4a8b396e5c112cd9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
