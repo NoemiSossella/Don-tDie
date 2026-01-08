@@ -1629,6 +1629,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2477775534353102678, guid: 1e430ac6b6af9a84386321be1af07655, type: 3}
+      propertyPath: m_TagString
+      value: Killer
+      objectReference: {fileID: 0}
     - target: {fileID: 3846962034639328255, guid: 1e430ac6b6af9a84386321be1af07655, type: 3}
       propertyPath: m_Name
       value: DeadFall
