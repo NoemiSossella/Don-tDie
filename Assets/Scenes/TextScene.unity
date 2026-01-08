@@ -1629,10 +1629,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2477775534353102678, guid: 1e430ac6b6af9a84386321be1af07655, type: 3}
-      propertyPath: m_TagString
-      value: Killer
-      objectReference: {fileID: 0}
     - target: {fileID: 3846962034639328255, guid: 1e430ac6b6af9a84386321be1af07655, type: 3}
       propertyPath: m_Name
       value: DeadFall
@@ -1675,10 +1671,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7254590773593540953, guid: 1e430ac6b6af9a84386321be1af07655, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7975110794377193346, guid: 1e430ac6b6af9a84386321be1af07655, type: 3}
-      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
