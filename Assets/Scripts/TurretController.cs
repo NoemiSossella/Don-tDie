@@ -1,83 +1,83 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TurretController : MonoBehaviour
 {
-    [Header("Sparo")]
-    public GameObject bulletPrefab;
-    public Transform firePoint;
-    public float bulletSpeed = 8f;
-    public float fireRate = 1f;
-    public int maxBullets = 10;   // NUMERO MASSIMO DI PROIETTILI
-
     [Header("Movimento verticale")]
     public float raiseHeight = 2f;
     public float raiseSpeed = 4f;
 
-    private float fireTimer;
-    private int bulletsShot = 0;  // CONTATORE PROIETTILI
+    [Header("Oggetto da spostare insieme")]
+    public Transform linkedObject;   // oggetto che si muove insieme
+
     private Vector2 basePosition;
     private Vector2 raisedPosition;
+
+    private Vector2 linkedBasePosition;
+    private Vector2 linkedRaisedPosition;
+
     private bool isRaised = false;
-    private bool canRaise = true;
+    private bool isFullyRaised = false;
 
     void Start()
     {
         basePosition = transform.position;
         raisedPosition = basePosition + Vector2.up * raiseHeight;
+
+        if (linkedObject != null)
+        {
+            linkedBasePosition = linkedObject.position;
+            linkedRaisedPosition = linkedBasePosition + Vector2.up * raiseHeight;
+        }
     }
 
     void Update()
     {
-        HandleShooting();
         MoveTurret();
-    }
-
-    void HandleShooting()
-    {
-        if (bulletsShot >= maxBullets)
-            return; // smette di sparare
-
-        fireTimer += Time.deltaTime;
-
-        if (fireTimer >= fireRate)
-        {
-            fireTimer = 0f;
-            Shoot();
-        }
-    }
-
-    void Shoot()
-    {
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-
-        if (rb != null)
-        {
-            rb.linearVelocity = Vector2.left * bulletSpeed; // VELOCITÀ PROIETTILE
-        }
-
-        bulletsShot++; // incrementa il contatore
-        Destroy(bullet, 3f);
     }
 
     void OnMouseDown()
     {
-        if (canRaise)
+        if (!isRaised)
         {
-            isRaised = true;
-            canRaise = false;
-            
+            isRaised = true; // si alza con il click
         }
     }
 
     void MoveTurret()
     {
-        Vector2 targetPosition = isRaised ? raisedPosition : basePosition;
-        transform.position = Vector2.Lerp(transform.position, targetPosition, Time.deltaTime * raiseSpeed);
+        if (!isRaised || isFullyRaised)
+            return;
+
+        // Muove la torretta
+        transform.position = Vector2.Lerp(
+            transform.position,
+            raisedPosition,
+            Time.deltaTime * raiseSpeed
+        );
+
+        // Muove anche l'oggetto collegato
+        if (linkedObject != null)
+        {
+            linkedObject.position = Vector2.Lerp(
+                linkedObject.position,
+                linkedRaisedPosition,
+                Time.deltaTime * raiseSpeed
+            );
+        }
+
+        // Controllo arrivo
+        if (Vector2.Distance(transform.position, raisedPosition) < 0.01f)
+        {
+            transform.position = raisedPosition;
+
+            if (linkedObject != null)
+                linkedObject.position = linkedRaisedPosition;
+
+            isFullyRaised = true;
+        }
     }
 }
+
 
 
 

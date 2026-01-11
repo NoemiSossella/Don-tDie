@@ -1,6 +1,6 @@
 using UnityEngine;
-using System.Collections;
-public class BoxControllet : MonoBehaviour
+
+public class BoxController : MonoBehaviour
 {
     private Rigidbody2D rb;
     private bool hasFallen = false;
@@ -20,18 +20,17 @@ public class BoxControllet : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Killer"))
+        if (other.CompareTag("Killer"))
         {
-            // Disattiva L'OGGETTO COLPITO
-            collision.gameObject.SetActive(false);
+            // Disattiva l'oggetto Killer
+            other.gameObject.SetActive(false);
 
-            // Ferma la caduta
-            rb.linearVelocity = Vector2.zero;
-            rb.gravityScale = 0f;
+            // NON fermiamo il Rigidbody, continua a cadere
         }
     }
 }
+
 
 
