@@ -560,6 +560,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "MainMen\xF9"
       objectReference: {fileID: 0}
+    - target: {fileID: 7376393599298624292, guid: ef5cd987c9de90445bc14c86ec6e5dce, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -705,6 +709,11 @@ PrefabInstance:
 --- !u!224 &1052609029 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7317288873288862206, guid: 45b96854ca667e74fbacaec78f3454e6, type: 3}
+  m_PrefabInstance: {fileID: 1052609028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1052609030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6061546310374303273, guid: 45b96854ca667e74fbacaec78f3454e6, type: 3}
   m_PrefabInstance: {fileID: 1052609028}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1153879446
@@ -1107,6 +1116,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2478079642121033569, guid: aac6824ce370b7b4d86ae0754a6a3d43, type: 3}
+      propertyPath: pausePanel
+      value: 
+      objectReference: {fileID: 1052609030}
+    - target: {fileID: 2478079642121033569, guid: aac6824ce370b7b4d86ae0754a6a3d43, type: 3}
+      propertyPath: gameOverPanel
+      value: 
+      objectReference: {fileID: 1758496828}
     - target: {fileID: 2654477429021353025, guid: aac6824ce370b7b4d86ae0754a6a3d43, type: 3}
       propertyPath: m_Name
       value: UiManager
@@ -1236,6 +1253,11 @@ PrefabInstance:
 --- !u!224 &1758496827 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2080663484080177181, guid: 390864e2cef1c3f4ba68dceecf6798c2, type: 3}
+  m_PrefabInstance: {fileID: 1758496826}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1758496828 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8137832825266610509, guid: 390864e2cef1c3f4ba68dceecf6798c2, type: 3}
   m_PrefabInstance: {fileID: 1758496826}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1835919076
