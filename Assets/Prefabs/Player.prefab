@@ -204,5 +204,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puntoB: {fileID: 0}
-  distanzaMinima: 0.2
-  nomeScenaDaCaricare: 
+  distanzaMinima: 1
+  nomeScenaDaCaricare: 1

@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class ChangeSceneAtPointB : MonoBehaviour
 {
     public Transform puntoB;
-    public float distanzaMinima = 0.2f;
+    public float distanzaMinima = 10f;
     public string nomeScenaDaCaricare;
 
     private bool scenaCambiata = false;

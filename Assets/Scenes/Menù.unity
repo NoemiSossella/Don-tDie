@@ -543,6 +543,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: "MainMen\xF9"
       objectReference: {fileID: 0}
+    - target: {fileID: 7776056384866062159, guid: ef5cd987c9de90445bc14c86ec6e5dce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776056384866062159, guid: ef5cd987c9de90445bc14c86ec6e5dce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776056384866062159, guid: ef5cd987c9de90445bc14c86ec6e5dce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 102900000, guid: 6953e306e7186f8479d38cb9f0a2e8f3, type: 3}
+    - target: {fileID: 7776056384866062159, guid: ef5cd987c9de90445bc14c86ec6e5dce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776056384866062159, guid: ef5cd987c9de90445bc14c86ec6e5dce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776056384866062159, guid: ef5cd987c9de90445bc14c86ec6e5dce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776056384866062159, guid: ef5cd987c9de90445bc14c86ec6e5dce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

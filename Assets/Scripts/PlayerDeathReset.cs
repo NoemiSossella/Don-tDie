@@ -11,15 +11,18 @@ public class PlayerDeathReset : MonoBehaviour
         if (isDead) return;
         isDead = true;
 
-        // Ricarica la scena corrente
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //Ricarica la scena corrente
+        UiManager.Instance.ShowGameOver();
+
+        Debug.Log("Sono oltre ShowGameOver");
     }
 
     // ESEMPIO: muore se tocca un oggetto killer
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Killer"))
         {
+            Debug.Log("Sono morto");
             Die();
         }
     }

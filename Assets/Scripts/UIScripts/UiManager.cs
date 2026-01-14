@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class UIManager : MonoBehaviour
+public class UiManager : MonoBehaviour
 {
-    public static UIManager Instance;
+    public static UiManager Instance;
 
     [Header("Panels")]
     public GameObject mainMenuPanel;
@@ -13,10 +13,14 @@ public class UIManager : MonoBehaviour
     private void Awake()
     {
         // Singleton
-        if (Instance == null)
-            Instance = this;
-        else
+        if (Instance != null && Instance != this)
+        {
             Destroy(gameObject);
+            return; 
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
@@ -51,8 +55,10 @@ public class UIManager : MonoBehaviour
 
     public void ShowGameOver()
     {
+        Debug.Log("Attivo MorteUI");
         DisableAllPanels();
         gameOverPanel.SetActive(true);
+        Debug.Log("gameOverPanel.isActive");
     }
 
     private void DisableAllPanels()
