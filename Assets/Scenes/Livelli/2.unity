@@ -1014,10 +1014,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretTest
       objectReference: {fileID: 0}
-    - target: {fileID: 5080528738145148018, guid: 990b2a201766b764a87354fe540c230f, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5339826072234598257, guid: 990b2a201766b764a87354fe540c230f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.4288704
@@ -1057,14 +1053,6 @@ PrefabInstance:
     - target: {fileID: 5339826072234598257, guid: 990b2a201766b764a87354fe540c230f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9111452337411025672, guid: 990b2a201766b764a87354fe540c230f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 4.6350965
-      objectReference: {fileID: 0}
-    - target: {fileID: 9111452337411025672, guid: 990b2a201766b764a87354fe540c230f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.864
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
