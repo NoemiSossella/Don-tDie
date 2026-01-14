@@ -13,14 +13,10 @@ public class UIManager : MonoBehaviour
     private void Awake()
     {
         // Singleton
-        if (Instance != null && Instance != this)
-        {
+        if (Instance == null)
+            Instance = this;
+        else
             Destroy(gameObject);
-            return; 
-        }
-
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
     }
 
     private void Start()

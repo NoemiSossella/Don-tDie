@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a7972f53a045f4f80bae8de9ae6d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenuPanel: {fileID: 0}
-  gamePanel: {fileID: 0}
+  mainMenuPanel: {fileID: 7376393599298624292, guid: ef5cd987c9de90445bc14c86ec6e5dce, type: 3}
+  gamePanel: {fileID: 3689581710286172328, guid: 684049db1ac74e24cbef4f75e1a3fe31, type: 3}
   pausePanel: {fileID: 6061546310374303273, guid: 45b96854ca667e74fbacaec78f3454e6, type: 3}
   gameOverPanel: {fileID: 8137832825266610509, guid: 390864e2cef1c3f4ba68dceecf6798c2, type: 3}
