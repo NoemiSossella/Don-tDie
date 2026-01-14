@@ -345,6 +345,10 @@ PrefabInstance:
       propertyPath: mainMenuPanel
       value: 
       objectReference: {fileID: 1181786875}
+    - target: {fileID: 2478079642121033569, guid: aac6824ce370b7b4d86ae0754a6a3d43, type: 3}
+      propertyPath: gamePanel
+      value: 
+      objectReference: {fileID: 1785254980}
     - target: {fileID: 2654477429021353025, guid: aac6824ce370b7b4d86ae0754a6a3d43, type: 3}
       propertyPath: m_Name
       value: UiManager
