@@ -794,6 +794,7 @@ GameObject:
   - component: {fileID: 8808216757546549562}
   - component: {fileID: 5650231624976204957}
   - component: {fileID: 2008307546239901186}
+  - component: {fileID: 3870206155400573317}
   m_Layer: 5
   m_Name: "Men\xF9"
   m_TagString: Untagged
@@ -902,7 +903,33 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5650231624976204957}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3870206155400573317}
+        m_TargetAssemblyTypeName: LevelSelector, Assembly-CSharp
+        m_MethodName: OpenLevelSelector
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3870206155400573317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4394435813493075297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98228e09f96c01428de61c1460406c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pausePanel: {fileID: 6061546310374303273}
+  levelSelectorPanel: {fileID: 3689581710286172328, guid: 684049db1ac74e24cbef4f75e1a3fe31, type: 3}
 --- !u!1 &6061546310374303273
 GameObject:
   m_ObjectHideFlags: 0
