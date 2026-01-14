@@ -119,6 +119,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &281389893 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4504213054364505459, guid: ef5cd987c9de90445bc14c86ec6e5dce, type: 3}
+  m_PrefabInstance: {fileID: 8561230819497612322}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98228e09f96c01428de61c1460406c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &602848094
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,6 +581,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4504213054364505459, guid: ef5cd987c9de90445bc14c86ec6e5dce, type: 3}
+      propertyPath: levelSelectorPanel
+      value: 
+      objectReference: {fileID: 1785254980}
     - target: {fileID: 7376393599298624292, guid: ef5cd987c9de90445bc14c86ec6e5dce, type: 3}
       propertyPath: m_Name
       value: "MainMen\xF9"
@@ -589,18 +604,18 @@ PrefabInstance:
     - target: {fileID: 7776056384866062159, guid: ef5cd987c9de90445bc14c86ec6e5dce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 102900000, guid: 6953e306e7186f8479d38cb9f0a2e8f3, type: 3}
+      objectReference: {fileID: 281389893}
     - target: {fileID: 7776056384866062159, guid: ef5cd987c9de90445bc14c86ec6e5dce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7776056384866062159, guid: ef5cd987c9de90445bc14c86ec6e5dce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: OpenLevelSelector
       objectReference: {fileID: 0}
     - target: {fileID: 7776056384866062159, guid: ef5cd987c9de90445bc14c86ec6e5dce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: LevelSelector, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7776056384866062159, guid: ef5cd987c9de90445bc14c86ec6e5dce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
