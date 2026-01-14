@@ -976,29 +976,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5485685100775364708, guid: 390864e2cef1c3f4ba68dceecf6798c2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5485685100775364708, guid: 390864e2cef1c3f4ba68dceecf6798c2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5485685100775364708, guid: 390864e2cef1c3f4ba68dceecf6798c2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 102900000, guid: 8f5fd0ad926c6b441a16a5cd42dd03ea, type: 3}
-    - target: {fileID: 5485685100775364708, guid: 390864e2cef1c3f4ba68dceecf6798c2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 8137832825266610509, guid: 390864e2cef1c3f4ba68dceecf6798c2, type: 3}
       propertyPath: m_Name
       value: Dead
-      objectReference: {fileID: 0}
-    - target: {fileID: 8137832825266610509, guid: 390864e2cef1c3f4ba68dceecf6798c2, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1419,6 +1399,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1673371405 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3689581710286172328, guid: 684049db1ac74e24cbef4f75e1a3fe31, type: 3}
+  m_PrefabInstance: {fileID: 693883944}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1683281089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1467,6 +1452,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2478079642121033569, guid: aac6824ce370b7b4d86ae0754a6a3d43, type: 3}
+      propertyPath: gamePanel
+      value: 
+      objectReference: {fileID: 1673371405}
     - target: {fileID: 2478079642121033569, guid: aac6824ce370b7b4d86ae0754a6a3d43, type: 3}
       propertyPath: pausePanel
       value: 

@@ -498,6 +498,7 @@ GameObject:
   - component: {fileID: 560603797519693422}
   - component: {fileID: 2110161303301348276}
   - component: {fileID: 5485685100775364708}
+  - component: {fileID: 6092649029924423315}
   m_Layer: 5
   m_Name: Resume
   m_TagString: Untagged
@@ -606,7 +607,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2110161303301348276}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6092649029924423315}
+        m_TargetAssemblyTypeName: PauseUI, Assembly-CSharp
+        m_MethodName: ReloadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6092649029924423315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4418474931591445458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30a4c4a6c7330bc4eb4e5a4d5ec7abdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pausePanel: {fileID: 1084682067250530587}
 --- !u!1 &4515303607102715951
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,6 +917,7 @@ GameObject:
   - component: {fileID: 4658210113283936485}
   - component: {fileID: 7668755777802408460}
   - component: {fileID: 3397963563101776930}
+  - component: {fileID: 6891939061159172678}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -999,7 +1026,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7668755777802408460}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6891939061159172678}
+        m_TargetAssemblyTypeName: QuitGame, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6891939061159172678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6992678778583008487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f5e900403e33e34b980416f9a697e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8137832825266610509
 GameObject:
   m_ObjectHideFlags: 0

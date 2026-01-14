@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5469711200439965415}
   - component: {fileID: 5197048481064926961}
   - component: {fileID: 8912706574859562711}
+  - component: {fileID: 3411696717859610511}
   m_Layer: 5
   m_Name: Resume
   m_TagString: Untagged
@@ -120,7 +121,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5197048481064926961}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3411696717859610511}
+        m_TargetAssemblyTypeName: PauseUI, Assembly-CSharp
+        m_MethodName: ReloadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3411696717859610511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224068014980554985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30a4c4a6c7330bc4eb4e5a4d5ec7abdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pausePanel: {fileID: 6061546310374303273}
 --- !u!1 &694361362774953285
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,6 +648,7 @@ GameObject:
   - component: {fileID: 6234300918533135379}
   - component: {fileID: 5005850260950061184}
   - component: {fileID: 4157939454008134470}
+  - component: {fileID: 4665873395558942302}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -730,7 +757,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5005850260950061184}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4665873395558942302}
+        m_TargetAssemblyTypeName: QuitGame, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4665873395558942302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3580446702901210120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f5e900403e33e34b980416f9a697e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4394435813493075297
 GameObject:
   m_ObjectHideFlags: 0
